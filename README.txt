@@ -43,5 +43,5 @@ Psuedo Code:
             text-decoration: none;
           }
         - https://www.w3schools.com/css/css_pseudo_classes.asp
-  - 
+  - div: padding, margin, border, color
    
