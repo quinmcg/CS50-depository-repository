@@ -3,8 +3,11 @@ This code is for my AP CS50 Computer Science Principles 'Create Task'. In it, I 
 build an audio visualiser for music. 
 
 
+
 TO-DO:
 Psuedo Code:
+- http://prntscr.com/eg5zxz
+    - rough sketch of design
 - search bar
 - menu area
 - playlist?
@@ -21,8 +24,13 @@ Psuedo Code:
       - top: title
               search bar to search a database (SoundCloud, Youtube, or Spotify)
               
+              
+              
 -JavaScript:
   - search a web Database -- SoundCloud, Youtube, or Spotify
-  - 
+        - http://stackoverflow.com/questions/29573703/soundcloud-search-display-results-using-javascript
+  
 -CSS:
-  -
+  - fonts
+  - styling: try to emulate kygolife.com?
+        - obviously way worse, but color scheme?
