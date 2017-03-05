@@ -12,7 +12,7 @@ Psuedo Code:
 - menu area
 - playlist?
 - color changer (personalize the color scheme)
-- 
+- full screen option?
 
 
 
