@@ -23,6 +23,8 @@ Psuedo Code:
             -ex: `<div style="width:50px; height:50px; background-color: blue"></div>
       - top: title
               search bar to search a database (SoundCloud, Youtube, or Spotify)
+      - buttons: hover (<li><a href="______">Button Name</a></li>
+            - link to CSS (below)
               
               
               
@@ -34,3 +36,12 @@ Psuedo Code:
   - fonts
   - styling: try to emulate kygolife.com?
         - obviously way worse, but color scheme?
+  - Button hovering: psuedo-selectors
+        - a:hover {
+            color: #555555;
+            font-weight: bold;
+            text-decoration: none;
+          }
+        - https://www.w3schools.com/css/css_pseudo_classes.asp
+  - 
+   
