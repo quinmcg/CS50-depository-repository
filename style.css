@@ -12,6 +12,8 @@ div {
 
 #header {
 	height: 50px;
+	width: 500px;
+	position: fixed;
 	background-color: #F38630;
 	margin-bottom: 10px;
 }
