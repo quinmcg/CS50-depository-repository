@@ -31,6 +31,9 @@ Psuedo Code:
 -JavaScript:
   - search a web Database -- SoundCloud, Youtube, or Spotify
         - http://stackoverflow.com/questions/29573703/soundcloud-search-display-results-using-javascript
+  - audio visualization:
+  		-using Audio API
+		-turn frame into RGB --> hex
   
 -CSS:
   - fonts
