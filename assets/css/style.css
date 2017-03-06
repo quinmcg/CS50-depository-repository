@@ -4,3 +4,12 @@
 		border-radius: 5px;
 		background-color: #355167;
 }
+
+#header{
+	height: 20px;
+	width: 500px;
+	border-radius: 5px;
+	background-color: #355167;
+	position: fixed;
+	margin: 0px 0px 0px 0px;
+}
