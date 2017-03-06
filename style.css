@@ -14,8 +14,12 @@ div {
 	height: 50px;
 	width: 500px;
 	position: fixed;
+	clear: both;
 	background-color: #F38630;
 	margin-bottom: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 .left {
