@@ -31,7 +31,7 @@ body {
 }
 
 .nav > li{
-    display: block;
+    display: inline-block;
     padding-right: 50px;
 }
 
