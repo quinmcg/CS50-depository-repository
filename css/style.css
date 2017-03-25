@@ -1,5 +1,10 @@
+@font-face {
+	font-family: Nexa;
+	src: css/fonts/nexa;
+}
+
 html {
-  background-color: #224568;
+	background-color: #224568;
  }
  
  
