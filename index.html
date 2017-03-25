@@ -2,17 +2,40 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="main.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+      var audio = new Audio("./songs/neverletyougo.mp3");
+        function play(){
+            audio.play();
+        }
+        function pause(){
+            audio.pause();
+        }
+
+        function incVolume(){
+            audio.volume += 0.1;
+        }
+        function decVolume(){
+            audio.volume -= 0.1;
+        }
+    </script>
   <title>
     Audio Visualization
   </title>
 </head>
 
 <body>
+  <audio id="audioElement" src="./songs/neverletyougo.mp3"></audio>
   <h1>AP CSP Create Project:</h1>
   <h2>Audio Visualization using JavaScript, HTML, and CSS</h2>
   <h1>Visualizer</h1>
-    <p>Song: Gypsy Heart <audio id="my Audio" src="songs/gyspyheart.mp3"></audio></p>
+    <div style="margin:12px auto;">
+        <button onclick="incVolume();">Increase Volume</button>
+        <button onclick="decVolume();">Decrease Volume</button>
+        <button onclick="play();">Play</button>
+        <button onclick="pause();">Pause</button>
+    </div>
 
 </body>
 
