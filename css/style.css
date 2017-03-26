@@ -15,7 +15,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Nexa
+    font-family: Tahoma;
 }
 
 .nav {
@@ -23,11 +23,12 @@ body {
     color: #ffffff;
     list-style: none;
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 0;
     top: 0;
     left: 0;
     width: 100%;
     margin: 0px;
+    position: absolute;
 }
 
 .nav > li{
