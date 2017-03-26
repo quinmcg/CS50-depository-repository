@@ -22,8 +22,8 @@ body {
     background-color: #595959;
     color: #ffffff;
     list-style: none;
-    text-align: center;
-    padding: 0;
+    text-align: right;
+    padding: 20px 0 20px 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,14 +33,33 @@ body {
 
 .nav > li{
     display: inline-block;
-    padding-right: 50px;
+    padding: 0 25px 0 25px;
+    font-size: 12px;
 }
 
 .nav > li > a{
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff;    
 }
 
 .nav > li > a:hover{
     color: #c1c1c1;
+}
+
+.logo{
+    color: #ffffff;
+    float: left;
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+
+
+.button {
+    color: #6195BD;
+    position: inherit
+    margin: 20px 0 20px 0;
+    position: fixed;
+    
 }
