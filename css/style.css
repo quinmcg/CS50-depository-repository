@@ -23,7 +23,7 @@ body {
     color: #ffffff;
     list-style: none;
     text-align: right;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 0 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -55,11 +55,20 @@ body {
     font-family: Tahoma;
 }
 
+.banner{
+    width: 100%;
+    display: block;
+}
 
-.button {
+.banner > .banner-image{
+    width: 100%;
+    display: block;
+}
+
+.button > li {
     color: #6195BD;
-    position: inherit
-    margin: 20px 0 20px 0;
-    position: fixed;
+    text-align: left;
+    margin-top: 0;
+    display: inline-block;
     
 }
