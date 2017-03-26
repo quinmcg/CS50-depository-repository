@@ -27,18 +27,25 @@
 <body>
   <audio id="audioElement" src="./songs/neverletyougo.mp3"></audio>
     <ul class="nav">
+        <div class="logo">
+            VISUALIZER
+        </div>
         <li> <a href="#">Home</a></li> 
         <li> <a href="#">About</a></li> 
         <li> <a href="#">Sources</a></li> 
         <li> <a href="#">Contact</a></li> 
     </ul>
-    <div>
-        <button onclick="incVolume();">Increase Volume</button>
-        <button onclick="decVolume();">Decrease Volume</button>
-        <button onclick="play();">Play</button>
-        <button onclick="pause();">Pause</button>
+    <div style="margin:12px auto;">
+        <ul class="button">
+            <li><button onclick="incVolume();">Increase Volume</button></li>
+            <li><button onclick="decVolume();">Decrease Volume</button></li>
+            <li><button onclick="play();">Play</button></li>
+            <li><button onclick="pause();">Pause</button></li>
+        </ul>
     </div>
 
 </body>
 
 </html>
+
+
