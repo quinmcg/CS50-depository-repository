@@ -6,6 +6,7 @@
         div#mp3_player > div > audio{  width:500px; background:#000; float:left;  }
         div#mp3_player > canvas{ width:500px; height:30px; background:#002D3C; float:left; }
     </style>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script>
         // Create a new instance of an audio object and adjust some of its properties
         var audio = new Audio();
@@ -61,14 +62,6 @@
     </ul>
     <div class="banner">
         <img class="banner-image" src="img/banner1.png"/>
-    </div>
-    <div style="margin:12px auto;">
-        <ul class="button">
-            <li><button onclick="incVolume();">Increase Volume</button></li>
-            <li><button onclick="decVolume();">Decrease Volume</button></li>
-            <li><button onclick="play();">Play</button></li>
-            <li><button onclick="pause();">Pause</button></li>
-        </ul>
     </div>
     <div id="mp3_player">
         <div id="audio_box"></div>
