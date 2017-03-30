@@ -1,16 +1,6 @@
-@font-face {
-	font-family: Nexa;
-	src: url(css/Nexa_Light.otf);
-}
-
-@font-face {
-	font-family: Nexa;
-	src: url(css/Nexa_Bold.otf);
-}
-
 html {
-	background-color: #4d4d4d;
- }
+    background-color: #4d4d4d;
+}
 
 body {
     margin: 0;
@@ -19,7 +9,7 @@ body {
 }
 
 .nav {
-    background-color: #4d4d4d;
+    background-color: #595959;
     color: #ffffff;
     list-style: none;
     text-align: right;
@@ -28,7 +18,8 @@ body {
     left: 0;
     width: 100%;
     margin: 0px;
-    position: absolute;
+    position: fixed;
+    opacity: 0.7;
 }
 
 .nav > li{
@@ -39,11 +30,13 @@ body {
 
 .nav > li > a{
     text-decoration: none;
-    color: #ffffff;    
+    color: #ffffff;
 }
 
 .nav > li > a:hover{
     color: #c1c1c1;
+    font-weight: bold;
+    font-size: 14;
 }
 
 .logo{
@@ -65,10 +58,19 @@ body {
     display: block;
 }
 
-.button > li {
+div > .button > li {
     color: #6195BD;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 0;
     display: inline-block;
-    
+}
+
+#canvas {
+    background-color: black;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    display: block;
 }
