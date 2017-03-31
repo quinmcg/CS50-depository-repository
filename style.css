@@ -37,6 +37,20 @@ body {
     color: #c1c1c1;
     font-weight: bold;
     font-size: 14;
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+.nav > li > a:active{
+    color: #d1d1d1;
+    font-weight: bold;
+    font-size: 14;
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
 }
 
 .logo{
@@ -73,4 +87,9 @@ div > .button > li {
     margin: auto;
     padding: 0;
     display: block;
+}
+
+div > .songName{
+    color: #3ad5ff;
+    font-family: Tahoma;
 }
