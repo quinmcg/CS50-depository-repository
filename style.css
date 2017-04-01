@@ -72,6 +72,10 @@ body {
     display: block;
 }
 
+audio {
+    background-color: #4d4d4d;
+}
+
 div > .button > li {
     color: #6195BD;
     text-align: left;
@@ -89,7 +93,8 @@ div > .button > li {
     display: block;
 }
 
-div > .songName{
+.songName{
     color: #3ad5ff;
+    font-size: 48;
     font-family: Tahoma;
 }
