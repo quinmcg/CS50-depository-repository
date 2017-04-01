@@ -39,6 +39,9 @@
         function updateSource9(){
             audio.src ="songs/timetopretend.mp3";
         }
+        function updateSource10(){
+            audio.src ="songs/smashmouth.mp3";
+        }
         //lines 16-20: ESTABLISHING THE AUDIO AND AUDIO SOURCE
         var audio = new Audio();
         audio.controls = true;
@@ -123,6 +126,9 @@
         if (audio.src === 'https://quinmcg.github.io/songs/timetopretend.mp3'){                             // Song 3: Gypsy Heart - BUNT.
             songInfo = '<em>Time to Pretend- <strong>MGMT</em></strong>';
         }
+        if (audio.src === 'https://quinmcg.github.io/songs/smashmouth.mp3'){                             // Song 3: Gypsy Heart - BUNT.
+            songInfo = '<em>Time to Pretend- <strong>MGMT</em></strong>';
+        }
     </script>
 </div>
 <audio id="audio">
@@ -158,6 +164,9 @@
             </li>
             <li id="song9" data-value="timetopretend.mp3">
                 <button onclick="updateSource9();">Time to Pretend - <em>MGMT</em></button>
+            </li>
+            <li id="song9" data-value="timetopretend.mp3">
+                <button onclick="updateSource10();">All Star- <em>Smash Mouth</em></button>
             </li>
         </ul>
     </li>
