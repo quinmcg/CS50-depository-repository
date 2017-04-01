@@ -48,6 +48,12 @@
         function updateSource12(){
             audio.src ="songs/dlmd.mp3";
         }
+        function updateSource13(){
+            audio.src ="songs/summer.mp3";
+        }
+        function updateSource14(){
+            audio.src ="songs/midnightcity.mp3";
+        }
         //lines 16-20: ESTABLISHING THE AUDIO AND AUDIO SOURCE
         var audio = new Audio();
         audio.controls = false;
@@ -142,6 +148,12 @@
         if (audio.src === 'https://quinmcg.github.io/songs/dlmd.mp3'){                             // Song 3: Gypsy Heart - BUNT.
             songInfo = '<em>Don\'t Let Me Down - <strong>The Chainsmokers</em></strong>';
         }
+        if (audio.src === 'https://quinmcg.github.io/songs/summer.mp3'){                             // Song 3: Gypsy Heart - BUNT.
+            songInfo = '<em>Summer- <strong>Marshmello</em></strong>';
+        }
+        if (audio.src === 'https://quinmcg.github.io/songs/midnightcity.mp3'){                             // Song 3: Gypsy Heart - BUNT.
+            songInfo = '<em>Midnight City - <strong>M83</em></strong>';
+        }
     </script>
 </div>
 <audio id="audio">
@@ -182,10 +194,16 @@
                 <button onclick="updateSource10();">All Star- <em>Smash Mouth</em></button>
             </li>
             <li id="song9" data-value="stilldre.mp3">
-                <button onclick="updateSource11();">Still Dre- <em>Dr. Dre</em></button>
+                <button onclick="updateSource11();">Still Dre (Clean)- <em>Dr. Dre</em></button>
             </li>
             <li id="song9" data-value="dlmd.mp3">
                 <button onclick="updateSource12();">Don't Let Me Down- <em>The Chainsmokers</em></button>
+            </li>
+            <li id="song9" data-value="summer.mp3">
+                <button onclick="updateSource13();">Summer- <em>Marshmello</em></button>
+            </li>
+            <li id="song9" data-value="midnightcity.mp3">
+                <button onclick="updateSource14();">Midnight City- <em>M83</em></button>
             </li>
         </ul>
     </li>
