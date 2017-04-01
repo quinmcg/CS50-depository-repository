@@ -42,6 +42,12 @@
         function updateSource10(){
             audio.src ="songs/smashmouth.mp3";
         }
+        function updateSource11(){
+            audio.src ="songs/stilldre.mp3";
+        }
+        function updateSource12(){
+            audio.src ="songs/dlmd.mp3";
+        }
         //lines 16-20: ESTABLISHING THE AUDIO AND AUDIO SOURCE
         var audio = new Audio();
         audio.controls = true;
@@ -130,6 +136,12 @@
         if (audio.src === 'https://quinmcg.github.io/songs/smashmouth.mp3'){                             // Song 3: Gypsy Heart - BUNT.
             songInfo = '<em>All Star - <strong>Smash Mouth</em></strong>';
         }
+        if (audio.src === 'https://quinmcg.github.io/songs/stilldre.mp3'){                             // Song 3: Gypsy Heart - BUNT.
+            songInfo = '<em>Still Dre - <strong>Dr. Dre</em></strong>';
+        }
+        if (audio.src === 'https://quinmcg.github.io/songs/dlmd.mp3'){                             // Song 3: Gypsy Heart - BUNT.
+            songInfo = '<em>Don\'t Let Me Down - <strong>The Chainsmokers</em></strong>';
+        }
     </script>
 </div>
 <audio id="audio">
@@ -168,6 +180,12 @@
             </li>
             <li id="song9" data-value="timetopretend.mp3">
                 <button onclick="updateSource10();">All Star- <em>Smash Mouth</em></button>
+            </li>
+            <li id="song9" data-value="stilldre.mp3">
+                <button onclick="updateSource11();">Still Dre- <em>Dr. Dre</em></button>
+            </li>
+            <li id="song9" data-value="dlmd.mp3">
+                <button onclick="updateSource12();">Don\'t Let Me Down- <em>The Chainsmokers</em></button>
             </li>
         </ul>
     </li>
