@@ -3,32 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        div#mp3_player{ width:1000px; height:500px; background:#4d4d4d; padding:5px; margin:50px auto; }
+        div#mp3_player{ width:1000px; height:500px; background:#4d4d4d; padding:5px; margin:0 auto; }
         div#mp3_player > div > audio{  width:1000px; background:#4d4d4d; float:left;  }
         div#mp3_player > canvas{ width:1000px; height:500px; background:#4d4d4d; float:left; }
-        div#mp3_playerDown{ width:1000px; height:500px; background:#ffffff; padding:5px; margin:50px auto; }
-        div#mp3_playerDown > div > audio{  width:1000px; background:#ffffff; float:left;  }
-        div#mp3_playerDown > canvas{ width:1000px; height:500px; background:#ffffff; float:left; }
+        div#mp3_playerDown{ width:1000px; height:500px; background:#4d4d4d; padding:5px; margin:0 auto; }
+        div#mp3_playerDown > div > audio{  width:1000px; background:#4d4d4d; float:left;  }
+        div#mp3_playerDown > canvas{ width:1000px; height:500px; background:#4d4d4d; float:left; }
     </style>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script>
+        function updateSource1(){
+            audio.src ="songs/bitbird.mp3";
+        }
+        function updateSource2(){
+            audio.src ="songs/gypsyheart.mp3";
+        }
+        function updateSource3(){
+            audio.src ="songs/theone.mp3";
+        }
         var audio = new Audio();
-        audio.src="songs/bitbird.mp3";
-        audio.controls = false;
+        audio.controls = true;
         audio.loop = true;
         audio.autoplay = true;
         var songInfo;
         if (audio.src === 'https://quinmcg.github.io/songs/theone.mp3'){
-            songInfo = 'The One - <strong><em>The Chainsmokers</em></strong>';
+            songInfo = '<em>The One - <strong>The Chainsmokers</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/bitbird.mp3'){
-            songInfo = 'zZz - <strong><em>DROELOE</em></strong>';
+            songInfo = '<em>zZz - <strong>DROELOE</strong></em>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/gyspyheart.mp3'){
-            songInfo = 'Gypsy Heart - <strong><em>BUNT.</em></strong>';
+            songInfo = '<em>Gypsy Heart - <strong>BUNT.</em></strong>';
         }
         var canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_width, bar_height;
         window.addEventListener("load", initMp3Player, false);
+        cloneCanvas(document.getElementById('analyser_render'));
         function initMp3Player(){
             document.getElementById('audio_box').appendChild(audio);
             context = new webkitAudioContext();                                                                     // AudioContext object instance
@@ -54,35 +63,21 @@
                 ctx.fillRect(bar_x, canvas.height, bar_width, bar_height);
             }
         }
-        </script>
-    <script>
-        audio.src="songs/bitbird.mp3";
-        var canvasDown, ctxDown, sourceDown, contextDown, analyserDown, fbc_arrayDown, barsDown, bar_xDown, bar_widthDown, bar_heightDown;
-        window.addEventListener("load", initMp3Player, false);
-        function initMp3Player(){
-            document.getElementById('audio_box').appendChild(audioDown);
-            contextDown = new webkitAudioContext();                                                                     // AudioContext object instance
-            analyserDown = contextDown.createAnalyser();                                                                    // AnalyserNode method
-            canvasDown = document.getElementById('analyser_renderDown');
-            ctxDown = canvasDown.getContext('2d');
-            sourceDown = contextDown.createMediaElementSource(audio);
-            sourceDown.connect(analyserDown);
-            analyserDown.connect(contextDown.destination);
-            frameLooperDown();
-        }
-        function frameLooperDown(){
-            window.webkitRequestAnimationFrame(frameLooper);
-            fbc_arrayDown = new Uint8Array(analyserDown.frequencyBinCount);
-            analyserDown.getByteFrequencyData(fbc_arrayDown);
-            ctxDown.clearRect(0, 0, canvasDown.width, canvasDown.height);                                                       // Clear the canvas
-            ctxDown.fillStyle = '#dddd11';                                                                              // Color of the bars
-            barsDown = 200;
-            for (var i = 0; i < barsDown; i++) {
-                bar_xDown = i * 3;
-                bar_widthDown = 2;
-                bar_heightDown = -(fbc_array[i] / 2);
-                ctxDown.fillRect(bar_xDown, canvasDown.height, bar_widthDown, bar_heightDown);
-            }
+        function cloneCanvas(oldCanvas) {
+
+            //create a new canvas
+            var newCanvas = document.createElement('canvas');
+            var context = newCanvas.getContext('2d');
+
+            //set dimensions
+            newCanvas.width = oldCanvas.width;
+            newCanvas.height = oldCanvas.height;
+
+            //apply the old canvas to the new one
+            context.drawImage(oldCanvas, 0, 0);
+            context.rotate(20 * Math.PI / 180);
+            //return the new canvas
+            return newCanvas;
         }
     </script>
     <title>Quin's Audio Visualizer</title>
@@ -102,21 +97,18 @@
 <div class="banner">
     <img class="banner-image" src="img/banner2.png"/>
 </div>
-<div class="songName">
-    <script>document.querySelector('.songName').innerHTML = songInfo;</script>
-</div>
 <div id="mp3_player">
     <div id="audio_box"></div>
     <canvas id="analyser_render"></canvas>
 </div>
-<div id="mp3_playerDown">
-    <div id="audio_boxDown"></div>
+<div id="mp3_player">
+    <div id="audio_box"></div>
     <canvas id="analyser_render_down"></canvas>
 </div>
-
-
-
-<!--<audio id="audio">
+<div class="songName">
+    <script>document.querySelector('.songName').innerHTML = songInfo;</script>
+</div>
+<audio id="audio">
     <source id="musicSource" type="audio/mp3">
     Your browser does not support the audio format.
 </audio>
@@ -124,16 +116,16 @@
     <li><strong>SONGS</strong>
         <ul>
             <li id="song1" data-value="bitbird.mp3">
-                <button onclick="updateSource();">zZz - <em>DROELOE</em></button>
+                <button onclick="updateSource1();">zZz - <em>DROELOE</em></button>
             </li>
             <li id="song2" data-value="gypsyheart.mp3">
-                <button onclick="updateSource();">Gypsy Heart - <em>BUNT.</em></button>
+                <button onclick="updateSource2();">Gypsy Heart - <em>BUNT.</em></button>
             </li>
             <li id="song3" data-value="theone.mp3">
-                <button onclick="updateSource();">The One - <em>The Chainsmokers</em></button>
+                <button onclick="updateSource3();">The One - <em>The Chainsmokers</em></button>
             </li>
         </ul>
     </li>
-</ul>-->
+</ul>
 </body>
 </html>
