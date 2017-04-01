@@ -63,12 +63,12 @@
         }
         function frameLooper(){
             window.webkitRequestAnimationFrame(frameLooper);
-            analyser.fftSize = 2048;
+            analyser.fftSize = 100;
             fbc_array = new Uint8Array(analyser.frequencyBinCount);
             analyser.getByteFrequencyData(fbc_array);
             ctx.clearRect(0, 0, canvas.width, canvas.height);                                                           // Clear the canvas
             ctx.fillStyle = 'rgb(0,' + (255-(bar_height+155)) + ' , ' + (255 -(bar_height+55)) + ')';                                                                                   // Color of the bars
-            bars = 100;
+            bars = 200;
             for (var i = 0; i < bars; i++) {
                 bar_x = i * 3;
                 bar_width = 2;
