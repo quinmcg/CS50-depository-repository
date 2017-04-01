@@ -53,6 +53,9 @@
         }
         function updateSource14(){
             audio.src ="songs/midnightcity.mp3";
+        }        
+        function updateSource15(){
+            audio.src ="songs/hourglass.mp3";
         }
         //lines 16-20: ESTABLISHING THE AUDIO AND AUDIO SOURCE
         var audio = new Audio();
@@ -154,6 +157,9 @@
         if (audio.src === 'https://quinmcg.github.io/songs/midnightcity.mp3'){                             // Song 3: Gypsy Heart - BUNT.
             songInfo = '<em>Midnight City - <strong>M83</em></strong>';
         }
+        if (audio.src === 'https://quinmcg.github.io/songs/hourglass.mp3'){                             // Song 3: Gypsy Heart - BUNT.
+            songInfo = '<em>Hourglass Mix- <strong>Zedd</em></strong>';
+        }
     </script>
 </div>
 <audio id="audio">
@@ -190,20 +196,23 @@
             <li id="song9" data-value="timetopretend.mp3">
                 <button onclick="updateSource9();">Time to Pretend - <em>MGMT</em></button>
             </li>
-            <li id="song9" data-value="timetopretend.mp3">
+            <li id="song10" data-value="timetopretend.mp3">
                 <button onclick="updateSource10();">All Star- <em>Smash Mouth</em></button>
             </li>
-            <li id="song9" data-value="stilldre.mp3">
+            <li id="song11" data-value="stilldre.mp3">
                 <button onclick="updateSource11();">Still Dre (Clean)- <em>Dr. Dre</em></button>
             </li>
-            <li id="song9" data-value="dlmd.mp3">
+            <li id="song12" data-value="dlmd.mp3">
                 <button onclick="updateSource12();">Don't Let Me Down- <em>The Chainsmokers</em></button>
             </li>
-            <li id="song9" data-value="summer.mp3">
+            <li id="song13" data-value="summer.mp3">
                 <button onclick="updateSource13();">Summer- <em>Marshmello</em></button>
             </li>
-            <li id="song9" data-value="midnightcity.mp3">
+            <li id="song14" data-value="midnightcity.mp3">
                 <button onclick="updateSource14();">Midnight City- <em>M83</em></button>
+            </li>
+            <li id="song15" data-value="hourglass.mp3">
+                <button onclick="updateSource15();">Hourglass Mix- <em>Zedd</em></button>
             </li>
         </ul>
     </li>
