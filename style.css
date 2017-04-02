@@ -1,5 +1,5 @@
 html {
-    background-color: #4d4d4d;
+    background-color: #3c3f41;
 }
 
 body {
@@ -9,23 +9,23 @@ body {
 }
 
 .nav {
-    background-color: #23297A;
+    background-color: #23297a;
     color: #ffffff;
     list-style: none;
     text-align: right;
-    padding: 20px 0 0 0;
+    padding: 0;
     top: 0;
     left: 0;
     width: 100%;
-    margin: 0px;
+    margin: 0;
     position: fixed;
     opacity: 0.7;
 }
 
 .nav > li{
     display: inline-block;
-    padding: 0 25px 0 25px;
-    font-size: 12px;
+    padding: 25px;
+    font-size: 14px;
 }
 
 .nav > li > a{
@@ -57,7 +57,7 @@ body {
     color: #ffffff;
     float: left;
     padding-left: 25px;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     font-family: Tahoma;
 }
@@ -73,7 +73,7 @@ body {
 }
 
 audio {
-    background-color: #4d4d4d;
+    background-color: #3c3f41;
 }
 
 div > .button > li {
@@ -97,4 +97,29 @@ div > .button > li {
     color: #3ad5ff;
     font-size: 48;
     font-family: Tahoma;
+}
+
+.songItems{
+    background-color: inherit;
+    color: #3ad5ff;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.songItems > li{
+    display: inline-block;
+    padding: 15px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.songItems > li > button{
+    display: inherit;
+    list-style: none;
+    padding: 0 5px 0 5px;
 }
