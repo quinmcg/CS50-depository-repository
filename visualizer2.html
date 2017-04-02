@@ -6,56 +6,56 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <style>
         /*mp3 player styling (in html) using abbreviated CSS*/
-        div#mp3_player{ width:1000px; height:500px; background:#4d4d4d; padding:5px; margin:50px auto; }
-        div#mp3_player > div > audio{  width:1000px; background:#4d4d4d; float:left;  }
-        div#mp3_player > canvas{ width:1000px; height:500px; background:#4d4d4d; float:left; }
+        div#mp3_player{ width: 1050px; height:500px; background:#3c3f41; padding:5px; margin:50px auto; }
+        div#mp3_player > div > audio{  width: 1050px; background:#3c3f41; float:left;  }
+        div#mp3_player > canvas{ width: 1050px; height:500px; background:#3c3f41; float:left; }
     </style>
     <!--The JavaScript code: -->
     <script>
         function updateSource1(){
-            audio.src ="songs/bitbird.mp3";
+        audio.src ="songs/bitbird.mp3";
         }
         function updateSource2(){
-            audio.src ="songs/gypsyheart.mp3";
+        audio.src ="songs/gypsyheart.mp3";
         }
         function updateSource3(){
-            audio.src ="songs/theone.mp3";
+        audio.src ="songs/theone.mp3";
         }
         function updateSource4(){
-            audio.src ="songs/firestone.mp3";
+        audio.src ="songs/firestone.mp3";
         }
         function updateSource5(){
-            audio.src ="songs/breezeblocks.mp3";
+        audio.src ="songs/breezeblocks.mp3";
         }
         function updateSource6(){
-            audio.src ="songs/electricfeel.mp3";
+        audio.src ="songs/electricfeel.mp3";
         }
         function updateSource7(){
-            audio.src ="songs/mrbrightside.mp3";
+        audio.src ="songs/mrbrightside.mp3";
         }
         function updateSource8(){
-            audio.src ="songs/puregrinding.mp3";
+        audio.src ="songs/puregrinding.mp3";
         }
         function updateSource9(){
-            audio.src ="songs/timetopretend.mp3";
+        audio.src ="songs/timetopretend.mp3";
         }
         function updateSource10(){
-            audio.src ="songs/smashmouth.mp3";
+        audio.src ="songs/smashmouth.mp3";
         }
         function updateSource11(){
-            audio.src ="songs/stilldre.mp3";
+        audio.src ="songs/stilldre.mp3";
         }
         function updateSource12(){
-            audio.src ="songs/dlmd.mp3";
+        audio.src ="songs/dlmd.mp3";
         }
         function updateSource13(){
-            audio.src ="songs/summer.mp3";
+        audio.src ="songs/summer.mp3";
         }
         function updateSource14(){
-            audio.src ="songs/midnightcity.mp3";
-        }        
+        audio.src ="songs/midnightcity.mp3";
+        }
         function updateSource15(){
-            audio.src ="songs/hourglass.mp3";
+        audio.src ="songs/hourglass.mp3";
         }
         //lines 16-20: ESTABLISHING THE AUDIO AND AUDIO SOURCE
         var audio = new Audio();
@@ -124,49 +124,49 @@
         //lines 81-91: DEFINING songInfo WHICH IS FOR DISPLAYING SONG TITLE ON WEBPAGE
         var songInfo;
         if (audio.src === 'https://quinmcg.github.io/songs/theone.mp3'){                                   // Song 1: The One - The Chainsmokers
-            songInfo = '<em>The One - <strong>The Chainsmokers</em></strong>';
+        songInfo = '<em>The One - <strong>The Chainsmokers</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/bitbird.mp3'){                                  // Song 2: zZz - DROELOE
-            songInfo = '<em>zZz - <strong>DROELOE</em></strong>';
+        songInfo = '<em>zZz - <strong>DROELOE</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/gyspyheart.mp3'){                               // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Gypsy Heart - <strong>BUNT.</em></strong>';
+        songInfo = '<em>Gypsy Heart - <strong>BUNT.</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/firestone.mp3'){                                // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Firestone - <strong>Kygo</em></strong>';
+        songInfo = '<em>Firestone - <strong>Kygo</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/breezeblocks.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Breezeblocks - <strong>Alt-J(∆)</em></strong>';
+        songInfo = '<em>Breezeblocks - <strong>Alt-J(∆)</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/electricfeel.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Electric Feel - <strong>MGMT</em></strong>';
+        songInfo = '<em>Electric Feel - <strong>MGMT</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/mrbrightside.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Mr. Brightside - <strong>The Killers</em></strong>';
+        songInfo = '<em>Mr. Brightside - <strong>The Killers</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/puregrinding.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Pure Grinding - <strong>Avicii</em></strong>';
+        songInfo = '<em>Pure Grinding - <strong>Avicii</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/timetopretend.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Time to Pretend- <strong>MGMT</em></strong>';
+        songInfo = '<em>Time to Pretend- <strong>MGMT</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/smashmouth.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>All Star - <strong>Smash Mouth</em></strong>';
+        songInfo = '<em>All Star - <strong>Smash Mouth</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/stilldre.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Still Dre - <strong>Dr. Dre</em></strong>';
+        songInfo = '<em>Still Dre - <strong>Dr. Dre</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/dlmd.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Don\'t Let Me Down - <strong>The Chainsmokers</em></strong>';
+        songInfo = '<em>Don\'t Let Me Down - <strong>The Chainsmokers</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/summer.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Summer- <strong>Marshmello</em></strong>';
+        songInfo = '<em>Summer- <strong>Marshmello</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/midnightcity.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Midnight City - <strong>M83</em></strong>';
+        songInfo = '<em>Midnight City - <strong>M83</em></strong>';
         }
         if (audio.src === 'https://quinmcg.github.io/songs/hourglass.mp3'){                             // Song 3: Gypsy Heart - BUNT.
-            songInfo = '<em>Hourglass Mix- <strong>Zedd</em></strong>';
+        songInfo = '<em>Hourglass Mix- <strong>Zedd</em></strong>';
         }
     </script>
 </div>
